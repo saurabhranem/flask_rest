@@ -20,3 +20,7 @@ def index():
 @app.route('/multiply/<int:num>', methods=['GET'])
 def multiply(num):
     return jsonify({'data': num*10})
+
+
+if __name__ == '__main__':
+    app.run()
